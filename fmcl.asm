@@ -6,6 +6,7 @@ section .data
 section .text
 	global _start
 	; global _start will tell the assembler where to begin.
+
 _start:
 	mov eax, 4   	; syscall nr. 4 -> sys_write
 	mov ebx, 1   	; file descriptor 1 -> stdout
